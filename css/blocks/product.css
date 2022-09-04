@@ -1,0 +1,209 @@
+.product {
+    padding-top: 120px;
+    padding-bottom: 168px;
+}
+
+.product_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_img-wrapper {
+    position: relative;
+
+    margin-right: 86px;
+    padding-left: 60px;
+    padding-bottom: 74px;
+}
+.product_img {
+    border-radius: 18px;
+}
+
+.product_card {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px 20px 30px;
+    width: 296px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 2px 0px rgba(0, 0, 0, 0.55);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 2px 0px rgba(0, 0, 0, 0.55);
+    border-radius: 4px;
+}
+.card_title {
+    position: relative;
+    font-weight: 600;
+    font-size: 14.49px;
+    line-height: 1.57;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.card_title::after {
+    position: absolute;
+    content: '';
+    background-color: #000000;
+    height: 1px;
+    bottom: -8px;
+    left: -7px;
+    right: -7px;
+}
+
+.card_avatar + * {
+    margin-top: 20px;
+}
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar_image {
+    width: 57px;
+    height: 57px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.avatar_image + * {
+    margin-top: 13px;
+}
+.avatar_name {
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.57;
+    color: #000000;
+}
+
+.card_contents {
+    padding-left: 6px;
+}
+.card_contents-title {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.57;
+    color: #000000;
+}
+
+.card_contents-title + * {
+    margin-top: 15px;
+}
+.card_contents-list {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.57;
+    color: #000000;
+}
+
+.card_contents-item {
+    list-style-type: disc;
+}
+
+.card_contents-item + .card_contents-item {
+    margin-top: 15px;
+}
+
+.product_content {
+    max-width: 584px;
+}
+.product_content-title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.57;
+    color: var(--secondary-text-color);
+}
+
+.product_content-title + * {
+    margin-top: 10px;
+}
+
+.product_content-subtitle {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.57;
+    color: var(--accent-text-color);
+}
+.product_content-subtitle + * {
+    margin-top: 20px;
+}
+
+.product_content-text {
+    max-width: 530px;
+    font-weight: 400;
+}
+.product_content-text + * {
+    margin-top: 40px;
+}
+.product_content-button {
+    color: var(--contrast-text-color);
+}
+
+/* --------Media Requests-------------------- */
+@media (max-width: 1298.98px) {
+    .product_img-wrapper {
+        flex: 1 0 auto;
+        flex-basis: 50%;
+        margin-right: 35px;
+    }
+}
+@media (max-width: 1265.98px) {
+    .product_content-subtitle {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+}
+@media (max-width: 1198.98px) {
+    .product_card {
+        bottom: -50px;
+    }
+}
+@media (max-width: 991.98px) {
+    .product_row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .product_card {
+        bottom: 0;
+    }
+    .product_img-wrapper {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 551.98px) {
+    .product_img-wrapper {
+        padding: 0;
+        /* margin-bottom: 365px; */
+    }
+    .product_card {
+        position: relative;
+        z-index: 2;
+        margin-top: -20%;
+        width: fit-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+@media (max-width: 320px) {
+    .product_content-text {
+        font-size: 16px;
+    }
+    .product_content-button {
+        display: flex;
+    }
+    .product_content_link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+/* --------Media Requests-------------------- */

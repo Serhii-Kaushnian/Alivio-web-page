@@ -1,0 +1,126 @@
+.story {
+    background-color: var(--bgc-color);
+    padding-top: 229px;
+    padding-bottom: 177px;
+}
+.story_container {
+    max-width: 1506px;
+    padding: 0px 20px;
+    align-items: center;
+    box-sizing: content-box;
+}
+
+.story_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.story_content {
+    margin-right: 30px;
+    max-width: 580px;
+}
+.story_title {
+    font-family: 'Georgia';
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.57;
+    color: var(--contrast-text-color);
+    margin-bottom: 33px;
+}
+.story_text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.57;
+    color: var(--contrast-text-color);
+    margin-bottom: 57px;
+}
+.story_button {
+    color: var(--contrast-text-color);
+}
+
+/* --------Story Video--------------------------------- */
+
+.story_video {
+    max-width: 895px;
+    position: relative;
+}
+
+.story_video-button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.story_video-overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    transition: color 250ms ease;
+}
+
+.story_video-overlay.hidden {
+    opacity: 0;
+}
+
+.story_video-obj {
+    vertical-align: top;
+    border-radius: 16px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* --------Media Requests-------------------- */
+@media (max-width: 1198.98px) {
+    .story {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .story_row {
+        flex-direction: column-reverse;
+    }
+    .story_video {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 991.98px) {
+    .story_title {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 924px) {
+    .story {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .story_content {
+        margin-right: 0;
+    }
+    .story_text {
+        margin-bottom: 25px;
+    }
+}
+@media (max-width: 320px) {
+    .story_content {
+        margin-right: 0;
+    }
+    .story_text {
+        font-size: 16px;
+    }
+    .story_button {
+        display: flex;
+    }
+    .story_link {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* --------Media Requests-------------------- */

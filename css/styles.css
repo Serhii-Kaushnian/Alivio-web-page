@@ -1,0 +1,95 @@
+/* ---------------Fonts---------------------- 
+font-family: 'Be Vietnam Pro', sans-serif; - for Lato
+font-family: 'Bodoni Moda', serif; - Georgia
+ ---------------Fonts----------------------  */
+
+:root {
+    --primary-text-color: #484848;
+    --secondary-text-color: #424242;
+    --tertiary-text-color: #292929;
+    --contrast-text-color: #ffffff;
+    --accent-text-color: #01996d;
+    --accent-color: #01996d;
+    --accent-color-hover: #10775a;
+    --bgc-color: #245852;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    height: 100%;
+    line-height: 1.55;
+    font-size: 20px;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+}
+/* ---------------------------------------------------------------------------- */
+.wrapper {
+    max-width: 1537px;
+    min-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+/* ---------------------------------------------------------------------------- */
+._container {
+    max-width: 1400px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    box-sizing: content-box;
+}
+
+._ibg {
+    position: relative;
+}
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+/* ===========Visualy hidden titles=============== */
+
+.visually-hidden {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* ------Header---------------------------------------------------------------------- */
+/* ---------Main--------------------------------------------------------------------------- */
+/* ---------Main Button on the Page--------------------------------------------------------------------------- */
+
+.green-button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 65px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+    transition: background-color 250ms ease, border-radius ease;
+}
+
+.green-button:hover,
+.green-button:focus {
+    background-color: var(--accent-color-hover);
+    border-radius: 50px;
+}
+/* ---------Main Button on the Page--------------------------------------------------------------------------- */
